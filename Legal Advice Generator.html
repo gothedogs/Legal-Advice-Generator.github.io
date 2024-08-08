@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Advice Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .answer {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Legal Advice Generator</h1>
+        <label for="question">Enter your question:</label>
+        <input type="text" id="question" class="input-box" placeholder="Type your question here">
+        <button class="button" onclick="generateAnswer()">Get Answer</button>
+        <div id="answer" class="answer"></div>
+    </div>
 
+    <script>
+        function generateAnswer() {
+            var answerDiv = document.getElementById('answer');
+            answerDiv.textContent = 'It depends';
+        }
+    </script>
+</body>
+</html>
